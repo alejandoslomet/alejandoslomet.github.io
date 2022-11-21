@@ -11,36 +11,134 @@
     <body>
         <header role="banner">
             <img src="/images/dtadd_black.png" alt="DTADD logo" id="header_logo">
+            <hr>
             <nav id="header_navigation">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/dec.html">D&E+C</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/index.html"><img src="/images/home.png" alt="Home" class="navigation_icon"><br>Home</a></li>
+                    <li><a href="/about.html"><img src="/images/about.png" alt="About" class="navigation_icon"><br>About</a></li>
+                    <li><a href="/dec.html"><img src="/images/communication.png" alt="Communication" class="navigation_icon"><br>D&E+C</a></li>
+                    <li><a href="/contact.html"><img src="/images/contact.png" alt="Contact" class="navigation_icon"><br>Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main  role="main">
-            <section class="home_section" id="home_section_about">
-                <h1 id="header_text">
-                    DTADD
-                </h1>
-                <figure  id="home_about_figure">
-                    <figcaption id="home_about_fig_cap">
-                        Picture taken during my visit at Machu Pichu in 2018, after I attended the <a href="https://sahc2018.com/" target="_blank" id="home_about_fig_cap_link">SAHC conference</a> which was held in Cuzco, Peru.
-                    </figcaption> 
-                    <picture id="home_about_pic">
+            <h1 id="header_text">
+                Introduction
+            </h1>
+            <section class="home_section" id="home_key">
+                <div id="home_key_text">
+                    <h2>Key info:</h2>
+                    <p><b>Project Number: </b>101066739</p>
+                    <p><b>Project Acronym: </b>DTADD</p>
+                    <p><b>Project Title: </b>Digital Twin Anomaly Detection Decision-Making for Bridge Management</p>
+                    <p><b>Experienced Researcher: </b>Dr. Alejandro Jiménez Rios</p>
+                    <p><b>Main Supervisor: </b>Prof. Vagelis Plevris</p>
+                    <p><b>Secondment Supervisor: </b>Prof. Maria Nogal</p>
+                </div>
+            </section>
+            <section class="home_section" id="home_context">
+                <div id="home_context_text">
+                    <h2>Context</h2>
+                    <p>In 2018 the Morandi bridge collapsed in Genova, Italy, killing 43 people, forcing the displacement of 200 families
+                        living below the bridge, causing damages of EUR 422 million and yearly losses of EUR 784 million to the industry
+                        sector in the region. More recently, in April 2020, the Italian bridge over the river Magra collapsed only a few
+                        months after being inspected and repaired. After these disasters, several European countries reported the poor state
+                        of their aging bridge infrastructure and highlighted the need of urgent investments to guarantee user safety and
+                        adequate functioning of their transport networks. Most bridges in Europe were built after 1945, were designed with a 50-
+                        100 year design life and have already started to deteriorate. In fact, it is estimated that 10% of those bridges are
+                        structurally deficient.</p>
+                    <p>From another point of view, many old European bridges are considered to have a cultural heritage value.
+                        Seven European bridges have been inscribed on the UNESCO World Heritage List thanks to their
+                        outstanding universal cultural value. In addition to the human and economic losses, the damage or collapse of a
+                        historical bridge also entails the painful loss of a cultural asset.</p>
+                </div>
+                <figure id="home_context_figure">
+                    <picture id="home_context_pic">
                         <source media="(min-width: 1200px)"
-                                srcset="/images/me-1031x690.jpg">
-                        <img src="/images/me-516x345.jpg" alt="picture of myself">
+                                srcset="/images/unesco_bridges.jpg">
+                        <img src="/images/unesco_bridges.jpg" alt="UNESCO bridges">
                     </picture>
+                    <figcaption id="home_context_fig_cap">
+                        European bridges part of the <a href="https://whc.unesco.org/en/list/" target="_blank" id="home_context_fig_cap_link">UNESCO World Heritage List.</a>
+                    </figcaption>
                 </figure>
-                <div id="home_about_text">
-                    <h2 class="home_section_title">About</h2>
-                    <h3><em>Hello!</em> and welcome to my personal website!</h3>
-                    <p>I have created this website to showcase my <a href="/education.html"><em>academic profile</em></a> and <a href="/industry.html"><em>professional experience</em></a>, highlight and communicate my <a href="/research.html"><em>research production and interests</em></a>, host <a href="/teaching.html"><em>teaching</em></a> and <a href="/programming.html"><em>programming</em></a> material I have created, and to provide a direct <a href="/contact.html"><em>contact</em></a> mean for those who are interested in getting in touch with me.</p>
-                    <p>You can download my CV in PDF format <a href="/documents/CV updated 2022-08-25.pdf" target="_blank"><em>here!</em></a></p>
+            </section>
+            <section class="home_section" id="home_problem">
+                <div id="home_problem_text">
+                    <h2>Problematic</h2>
+                    <p>The problem of damage detection in bridge monitoring may seem like a simple classification problem, i.e.
+                        identifying whether there is or there isn’t any damage in the bridge. Several researchers have applied well-known
+                        machine learning and classification algorithms to try to identify damage in bridges. Chalouhi et al.7 implemented a
+                        two-stage artificial neural network (ANN) process for damage detection in railway bridges. Pan et al.8 implemented
+                        a support vector machine to try to identify damage in cable-stayed bridges. More recently, Tran-Ngoc et al.9 presented
+                        a modified ANN cuckoo search algorithm that was tested on a steel truss bridge. However, the individual and highly
+                        complex nature of bridges may result in different dynamic responses and thus add to the complexity of this task.
+                        According to Mehrotra et al.10 these classification approaches are rarely successful due to the important imbalance
+                        between normal and anomalous cases, and thus result in too many false negatives. An excessive number of false
+                        negatives may hinder the detection of actual damages or substantial decay, ultimately affecting the performance of a
+                        bridge and, in critical cases, leading to its collapse. Conversely, a large number of false positives would lead to
+                        unnecessary spending of resources. By contrast, an acceptable number of false positives may be even desirable for
+                        damage detection on CH bridges which could be obtained with the application of a fine-tuned anomaly detection
+                        algorithm (ADA). Moreover, ADAs have been specifically developed to deal with complex damage detection
+                        situations and could effectively detect changes in the data collected during a bridge health monitoring process.
+                        Furthermore, ADAs can be applied on unsupervised datasets, which makes them highly efficient even if data is not
+                        tagged.</p>
+                    <p>Because of the large number of existing bridges and the limited availability of human and economic
+                        resources11, it is not feasible to continuously inspect and assess the structural condition of every bridge in Europe. In
+                        the current practice, bridge inspections are performed on a code-prescriptive fixed-scheduled periodic basis varying
+                        between two to six years.12 However, those periodic revisions have proven to be ineffective, as damage could appear
+                        after a periodic inspection and not be detected until the next one, leading to further deterioration of the bridge and
+                        increased cost of its eventual repair or replacement, if not to its collapse as in the Magra bridge case. In addition to
+                        the particular condition of a bridge, other factors can be considered in scheduling and performing bridge inspections.
+                        Most approaches consider the current and future usage of the bridge, its role in the transportation network, as well as
+                        other environmental, political and social factors. Unfortunately, proper consideration of the CH value of a bridge is
+                        consistently lacking in the current bridge management methodologies, i.e., Honfi et al13., as most of the current
+                        methodologies, do not even consider the heritage value of the bridge in their bridge management methodology. Janas
+                        et al14. only consider the historical value of the bridge as a subset of three factors implemented to determine bridge
+                        repair priority. It is of paramount importance to integrate CH values with bridge management methodologies, in
+                        agreement with international principles of conservation15, otherwise irreplaceable parts of our built environment may
+                        be lost forever.</p>
+                </div>
+            </section>
+            <section class="home_section" id="home_solution">
+                <div id="home_solution_text">
+                    <h2>Proposed solution</h2>
+                    <p>A way to tackle the issue of insufficient resources at network level, while adequately considering the CH
+                        value of a bridge, is to implement a RBBMA. A RBBMA depends on the implementation of a constant bridge
+                        monitoring system capable of detecting any significant changes in the structural response of the bridge that may
+                        indicate damage or substantial decay. Constant bridge monitoring could become a short-term reality at a networklevel
+                        thanks to the implementation of low-cost Internet-of-Things-driven systems, such as the one developed by
+                        Malik et al.16 Based on the nature and severity of the detected change, a reliability estimation is performed in order
+                        to assess the possible intervention scenarios. The bridge management stakeholder uses the generated information to
+                        make an informed decision, thus optimising the resources it has at its disposal. The main advantage of implementing
+                        a RBBMA over code-prescriptive fixed-scheduled periodic inspections is that if the bridge suffers significant damage
+                        at any moment in time, immediate action can be taken. Therefore, repairs are applied before damage progresses and
+                        becomes more expensive to fix or leads to the failure of the bridge. Moreover, by constantly monitoring the condition
+                        of the bridge, scheduled inspections could be postponed if no significant change is detected, thus saving important
+                        resources that can be directly applied to inspecting other damaged bridges. Therefore, a RBBMA leads to improved
+                        bridge performance and CH conservation, an increase in the bridge service life and to an eventual reduction of the
+                        maintenance and operation costs of the bridge network.</p>
+                    <p>This interdisciplinary project will go beyond the state of the art by improving bridge damage detection
+                        with the application of a high-performance ADA to the post-processing of the data collected from bridge monitoring.
+                        The DTADD is a very ambitious, yet achievable project since for the first time, an automatic algorithm will be
+                        implemented with the CH value of bridges explicitly in mind. The selected ADA will be fine-tuned to provide an
+                        acceptable number of false positives in order to ensure the adequate and timely detection of damages in CH bridges,
+                        thus preventing their irreplaceable loss. Furthermore, a specialised open-source decision-making plug-in with a
+                        reliability-based management approach that explicitly considers the CH of bridges will be developed. This plug-in
+                        could be directly integrated within any of the currently implemented bridge maintenance systems (BMS) in Europe,
+                        thus bringing the outcomes of this research directly to the reach of bridge management practitioners and stakeholders.
+                        This plug-in will foster the preventive conservation of existing bridges in Europe leading to an improved CH
+                        conservation and to more sustainable management and operation of bridge networks.</p>
+                </div>
+            </section>
+            <section class="home_section" id="home_objectives">
+                <div id="home_objectives_text">
+                    <h2>Research & Inovation Objectives (R&IO)</h2>
+                    <p>R&IO1 is to build digital twin (DT) models of heritage/conventional bridges to assess and identify the highest
+                        performing anomaly detection algorithm (ADA) for damage and/or significant decay detection.</p>
+                    <p>R&IO2 is to develop an ADA-informed open-source decision-making plug-in based on a RBBMA, to assess
+                        the need for bridge intervention while explicitly considering the bridge’s CH value.</p>
                 </div>
             </section>
         </main>
@@ -57,6 +155,24 @@
                         <li><a href="https://www.researchgate.net/project/Digital-Twin-Anomaly-Detection-Decision-Making-DTADD-for-Bridge-Management" target="_blank"><img id="researchgate_logo" src="/images/researchgate.png" alt="Researchgate" title="Researchgate"></a></li>
                     </ul>
                 </nav>
+            </section>
+            <section id="footer_container2">
+                <nav id="footer_institutions">
+                    <ul>
+                        <li><a href="https://www.oslomet.no/en/" target="_blank"><img id="oslomet_logo" src="/images/oslomet.png" alt="Oslomet" title="Oslomet"></a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/101066739" target="_blank"><img id="eur_com_logo" src="/images/eur_com.png" alt="European Comission" title="Europeancomission"></a></li>
+                        <li><a href="https://www.tudelft.nl/en/" target="_blank"><img id="tudelft_logo" src="/images/tudelft.png" alt="TUDelft" title="TUDelft"></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <hr>
+            <section>
+                <address id="footer_address">
+                    Created by <a href="https://orcid.org/0000-0003-4470-255X" target="_blank">Dr. Alejandro Jimenez Rios</a><br>
+                </address>
+            </section>
+            <section>
+                <p id="footer_copyright"><small>This project has received funding from the European Union's Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 101066739.</small></p>
             </section>
         </footer>
     </body>
