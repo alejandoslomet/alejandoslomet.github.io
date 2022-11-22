@@ -115,6 +115,7 @@ p {
     background-color: #000000;
     color: #ffffff;
     display: inline-block;
+    border-radius: 1rem;
 }
 #home_key_text, #home_objectives_text, #home_gender_text {
     padding: 0 1rem;
@@ -139,6 +140,36 @@ p {
 #home_context_fig_cap, #home_methods_fig_cap {
     text-align: center;
     font-size: smaller;
+}
+
+.participants_er_data {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.participants_er_data p {
+    text-align: center;
+}
+.participant_image {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.people_social {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+.people_social li a img {
+    width: 2rem;
 }
 /* 
 h2::first-letter {
@@ -371,6 +402,16 @@ footer {
         float: right;
         margin-left: 1rem;
     }
+
+    .participants_er_data {
+        width: 50%;
+        float: left;
+        margin-right: 1rem;
+    }
+    hr {
+        clear: both;
+        margin: 2rem;
+    }
 }
 
 
@@ -384,6 +425,14 @@ footer {
     }
     #home_objectives {
         width: 40%;
+    }
+
+    .participants_er_data {
+        width: 40%;
+    }
+    hr {
+        clear: both;
+        margin: 2rem;
     }
 }
 
