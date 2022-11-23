@@ -198,6 +198,35 @@ p {
     width: 250px;
 }
 
+.article_title {
+    text-decoration: underline;
+    margin-bottom: 0.1rem;
+}
+.article_date {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 0;
+}
+.article_paragraph {
+
+}
+.article_figure {
+    margin: 0;
+}
+.article_pic {
+
+}
+.article_image {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.article_caption {
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: center;
+}
+
 
 /* FOOTER STYLES */
 footer {
@@ -282,6 +311,7 @@ footer {
         width: 75%;
         margin: 0 auto;
     }
+    
 }
 
 
@@ -307,6 +337,40 @@ footer {
     }
     .institutions_data {
         width: 60%;
+    }
+
+    article {
+        column-count: 2;
+        column-gap: 3rem;
+    }
+    #article_hr {
+        margin-bottom: 1rem;
+    }
+    .article_title {
+        text-align: justify;
+        column-span: all;
+    }
+    .article_date {
+        text-align: justify;
+    }
+    .article_paragraph {
+        text-align: justify;
+    }
+    .article_figure {
+        margin: 0;
+    }
+    .article_pic {
+    
+    }
+    .article_image {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .article_caption {
+        font-size: 0.75rem;
+        font-style: italic;
+        text-align: center;
     }
 }
 
