@@ -23,26 +23,86 @@
         </header>
 
         <main  role="main">
-            <section class="home_section" id="home_section_about">
-                <h1 id="header_text">
-                    DTADD
-                </h1>
-                <figure  id="home_about_figure">
-                    <figcaption id="home_about_fig_cap">
-                        Picture taken during my visit at Machu Pichu in 2018, after I attended the <a href="https://sahc2018.com/" target="_blank" id="home_about_fig_cap_link">SAHC conference</a> which was held in Cuzco, Peru.
-                    </figcaption> 
-                    <picture id="home_about_pic">
-                        <source media="(min-width: 1200px)"
-                                srcset="/images/me-1031x690.jpg">
-                        <img src="/images/me-516x345.jpg" alt="picture of myself">
-                    </picture>
-                </figure>
-                <div id="home_about_text">
-                    <h2 class="home_section_title">About</h2>
-                    <h3><em>Hello!</em> and welcome to my personal website!</h3>
-                    <p>I have created this website to showcase my <a href="/education.html"><em>academic profile</em></a> and <a href="/industry.html"><em>professional experience</em></a>, highlight and communicate my <a href="/research.html"><em>research production and interests</em></a>, host <a href="/teaching.html"><em>teaching</em></a> and <a href="/programming.html"><em>programming</em></a> material I have created, and to provide a direct <a href="/contact.html"><em>contact</em></a> mean for those who are interested in getting in touch with me.</p>
-                    <p>You can download my CV in PDF format <a href="/documents/CV updated 2022-08-25.pdf" target="_blank"><em>here!</em></a></p>
-                </div>
+            <h1 class="header_text">
+                Get in touch!
+            </h1>
+            <section class="home_section" id="contact_section_getintouch">
+                <form action="/python/get_in_touch.py" 
+                        method="POST" 
+                        enctype="multipart/form-data"
+                        id="form-getintouch">
+                    <fieldset>
+                        <legend>Fill out and submit...</legend>
+                        <!-- <p>Ask a question or leave a comment...</p> -->
+                        <ol>
+                            <li><label for="form-getintouch-fullname">Name:</label>
+                                <input type="text" 
+                                        name="form-getintouch-fullname" 
+                                        id="form-getintouch-fullname" 
+                                        size="10"
+                                        maxlength="50"
+                                        minlength="1"
+                                        placeholder="Max 50 characters..."></li>
+                            <li><label for="form-getintouch-email">Email:</label>
+                                <input type="email" 
+                                        name="form-getintouch-email" 
+                                        id="form-getintouch-email" 
+                                        size="10"
+                                        maxlength="50"
+                                        minlength="3"
+                                        placeholder="Max 50 characters..."></li>
+                            <li><label for="form-getintouch-topic">Topic:</label>
+                                <select name="form-getintouch-topic" 
+                                        id="form-getintouch-topic">
+                                    <option selected>Education</option>
+                                    <option>Research</option>
+                                    <option>Teaching</option>
+                                    <option>Industry</option>
+                                    <option>Programming</option>
+                                    <option>Other</option>
+                                </select></li>
+                            <li><label for="form-getintouch-que_com">Question or comment:</label>
+                                <textarea name="form-getintouch-que_com" 
+                                            id="form-getintouch-que_com"
+                                            size="10"
+                                            maxlength="500"
+                                            minlength="1"
+                                            placeholder="Max 500 characters..."></textarea></li>
+                            <li><label for="form-getintouch-att_fil">Attach a file if required:</label>
+                                <input type="file"
+                                        name="form-getintouch-att_fil"
+                                        id="form-getintouch-att_fil"></label></li>
+                            <!-- <li><label for="form-getintouch-age_gro">How old are you?</label>
+                                <ul id="form-getintouch-age_gro">
+                                    <li><input type="radio" 
+                                                name="form-getintouch-age" 
+                                                value="under24" 
+                                                checked> under 24</li>
+                                    <li><input type="radio" 
+                                                name="form-getintouch-age" 
+                                                value="25-34"> 25 to 34</li>
+                                    <li><input type="radio" 
+                                                name="form-getintouch-age" 
+                                                value="35-44"> 35 to 44</li>
+                                    <li><input type="radio" 
+                                                name="form-getintouch-age" 
+                                                value="over45"> 45+</li>
+                                </ul></li> -->
+                            <li><label for="form-getintouch-mai_lis" id="checkbox_label"></label>
+                                <input type="checkbox"
+                                        name="form-getintouch-mai_lis"
+                                        id="form-getintouch-mai_lis" 
+                                        value="yes"
+                                        checked> Add me to the email list and send me DTADD news.</li>
+                        </ol>
+                        <input type="hidden" 
+                                name="form-getintouch-success-link"
+                                id="form-getintouch-success-link" 
+                                value="/contact/thank_you.html">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
             </section>
         </main>
 

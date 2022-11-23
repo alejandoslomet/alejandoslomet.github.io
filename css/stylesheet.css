@@ -227,6 +227,62 @@ p {
     text-align: center;
 }
 
+form {
+    width: 90%;
+    padding-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+fieldset {
+    border: 1px solid #000000;
+    font-size: 0.9rem;
+    flex: 1 1 20em;
+}
+fieldset legend {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+form ol, form ul {
+    list-style: none;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+form ol li, form ul li {
+    padding: 0.5rem 0;
+    display: flex;
+	flex-wrap: wrap;
+}
+label {
+    flex: 0 0 auto;
+	margin-bottom: 4px;
+    padding-right: 1rem;
+}
+input, textarea, select {
+	flex: 1 1 auto;
+}
+textarea {
+    display: block;
+    height: 5em;
+    font-family: inherit; 
+    font-size: .875em;
+    line-height: 1.25;
+    overflow: auto;
+    resize: none;
+}
+input[type="file"] {
+    flex: 1 1 auto;
+}
+input[type="checkbox"] {
+    width: 1px;
+    margin-left: 0;
+    display: block;
+    flex: 1 1 auto;
+} 
+
 
 /* FOOTER STYLES */
 footer {
