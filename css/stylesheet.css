@@ -76,6 +76,7 @@ header {
     justify-content: space-evenly;
 }
 #header_navigation ul li {
+    text-align: center;
     font-size: .75rem;
     padding: 0.25em 0.5em;
 }
@@ -227,62 +228,6 @@ p {
     text-align: center;
 }
 
-form {
-    width: 90%;
-    padding-bottom: 1rem;
-    margin: 0 auto 1rem auto;
-    background-color: #000000;
-    color: #ffffff;
-    border-radius: 1rem;
-}
-fieldset {
-    border: 1px solid #000000;
-    font-size: 0.9rem;
-    flex: 1 1 20em;
-}
-fieldset legend {
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    overflow: hidden;
-}
-form ol, form ul {
-    list-style: none;
-    list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-form ol li, form ul li {
-    padding: 0.5rem 0;
-    display: flex;
-	flex-wrap: wrap;
-}
-label {
-    flex: 0 0 auto;
-	margin-bottom: 4px;
-    padding-right: 1rem;
-}
-input, textarea, select {
-	flex: 1 1 auto;
-}
-textarea {
-    display: block;
-    height: 5em;
-    font-family: inherit; 
-    font-size: .875em;
-    line-height: 1.25;
-    overflow: auto;
-    resize: none;
-}
-input[type="file"] {
-    flex: 1 1 auto;
-}
-input[type="checkbox"] {
-    width: 1px;
-    margin-left: 0;
-    display: block;
-    flex: 1 1 auto;
-} 
-
 
 /* FOOTER STYLES */
 footer {
@@ -302,6 +247,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-left: 0;
 }
 #footer_institutions ul {
@@ -337,6 +283,26 @@ footer {
     main {
         margin: 0 15vw;
     }
+    header  {
+        padding-bottom: 1rem;
+    }
+    #header_logo {
+        float: left;
+        width: 150px;
+        margin: 1rem auto 1rem 5vw;;
+        padding: 1rem auto 1rem 5vw;
+    }
+    #hr_header {
+        display: none;
+    }
+    #header_navigation ul {
+        padding-top: 3rem;
+        justify-content: right;
+    }
+    #header_navigation ul li {
+        font-size: .75rem;
+        padding: 0.25em 2vw;
+    }
     h1 {
         font-size: 3rem;
         margin: 30px;
@@ -367,6 +333,7 @@ footer {
         width: 75%;
         margin: 0 auto;
     }
+
     
 }
 
@@ -375,6 +342,10 @@ footer {
 @media screen and (min-width: 1200px) {
     main {
         margin: 0 20vw;
+    }
+    #header_navigation ul li {
+        font-size: 1rem;
+        padding: 0.25em 3vw;
     }
     #home_key {
         width: 40%;
@@ -428,5 +399,6 @@ footer {
         font-style: italic;
         text-align: center;
     }
+
 }
 

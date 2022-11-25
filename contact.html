@@ -11,7 +11,7 @@
     <body>
         <header role="banner">
             <img src="/images/dtadd_black.png" alt="DTADD logo" id="header_logo">
-            <hr>
+            <hr id="hr_header">
             <nav id="header_navigation">
                 <ul>
                     <li><a href="/index.html"><img src="/images/home.png" alt="Home" class="navigation_icon"><br>Home</a></li>
@@ -26,84 +26,7 @@
             <h1 class="header_text">
                 Get in touch!
             </h1>
-            <section class="home_section" id="contact_section_getintouch">
-                <form action="/python/get_in_touch.py" 
-                        method="POST" 
-                        enctype="multipart/form-data"
-                        id="form-getintouch">
-                    <fieldset>
-                        <legend>Fill out and submit...</legend>
-                        <!-- <p>Ask a question or leave a comment...</p> -->
-                        <ol>
-                            <li><label for="form-getintouch-fullname">Name:</label>
-                                <input type="text" 
-                                        name="form-getintouch-fullname" 
-                                        id="form-getintouch-fullname" 
-                                        size="10"
-                                        maxlength="50"
-                                        minlength="1"
-                                        placeholder="Max 50 characters..."></li>
-                            <li><label for="form-getintouch-email">Email:</label>
-                                <input type="email" 
-                                        name="form-getintouch-email" 
-                                        id="form-getintouch-email" 
-                                        size="10"
-                                        maxlength="50"
-                                        minlength="3"
-                                        placeholder="Max 50 characters..."></li>
-                            <li><label for="form-getintouch-topic">Topic:</label>
-                                <select name="form-getintouch-topic" 
-                                        id="form-getintouch-topic">
-                                    <option selected>Education</option>
-                                    <option>Research</option>
-                                    <option>Teaching</option>
-                                    <option>Industry</option>
-                                    <option>Programming</option>
-                                    <option>Other</option>
-                                </select></li>
-                            <li><label for="form-getintouch-que_com">Question or comment:</label>
-                                <textarea name="form-getintouch-que_com" 
-                                            id="form-getintouch-que_com"
-                                            size="10"
-                                            maxlength="500"
-                                            minlength="1"
-                                            placeholder="Max 500 characters..."></textarea></li>
-                            <li><label for="form-getintouch-att_fil">Attach a file if required:</label>
-                                <input type="file"
-                                        name="form-getintouch-att_fil"
-                                        id="form-getintouch-att_fil"></label></li>
-                            <!-- <li><label for="form-getintouch-age_gro">How old are you?</label>
-                                <ul id="form-getintouch-age_gro">
-                                    <li><input type="radio" 
-                                                name="form-getintouch-age" 
-                                                value="under24" 
-                                                checked> under 24</li>
-                                    <li><input type="radio" 
-                                                name="form-getintouch-age" 
-                                                value="25-34"> 25 to 34</li>
-                                    <li><input type="radio" 
-                                                name="form-getintouch-age" 
-                                                value="35-44"> 35 to 44</li>
-                                    <li><input type="radio" 
-                                                name="form-getintouch-age" 
-                                                value="over45"> 45+</li>
-                                </ul></li> -->
-                            <li><label for="form-getintouch-mai_lis" id="checkbox_label"></label>
-                                <input type="checkbox"
-                                        name="form-getintouch-mai_lis"
-                                        id="form-getintouch-mai_lis" 
-                                        value="yes"
-                                        checked> Add me to the email list and send me DTADD news.</li>
-                        </ol>
-                        <input type="hidden" 
-                                name="form-getintouch-success-link"
-                                id="form-getintouch-success-link" 
-                                value="/contact/thank_you.html">
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </fieldset>
-                </form>
-            </section>
+            
         </main>
 
         <footer role="contentinfo">
@@ -116,6 +39,7 @@
                         <li><a href="https://www.youtube.com/channel/UCCFfT_ggKhtvxVhwdXyYqEw" target="_blank"><img id="youtube_logo" src="/images/youtube.png" alt="Youtube" title="Youtube"></a></li>
                         <li><a href="https://www.linkedin.com/company/msca-dtadd/" target="_blank"><img id="linkedin_logo" src="/images/linkedin.png" alt="Linkedin" title="Linkedin"></a></li>
                         <li><a href="https://www.researchgate.net/project/Digital-Twin-Anomaly-Detection-Decision-Making-DTADD-for-Bridge-Management" target="_blank"><img id="researchgate_logo" src="/images/researchgate.png" alt="Researchgate" title="Researchgate"></a></li>
+                        <li><a href="https://osf.io/wfqrg/" target="_blank"><img id="osf_logo" src="/images/osf.png" alt="OSF" title="OSF"></a></li>
                     </ul>
                 </nav>
             </section>
@@ -123,7 +47,7 @@
                 <nav id="footer_institutions">
                     <ul>
                         <li><a href="https://www.oslomet.no/en/" target="_blank"><img id="oslomet_logo" src="/images/oslomet.png" alt="Oslomet" title="Oslomet"></a></li>
-                        <li><a href="https://cordis.europa.eu/project/id/101066739" target="_blank"><img id="eur_com_logo" src="/images/eur_com.png" alt="European Comission" title="Europeancomission"></a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/101066739" target="_blank"><img id="eu_logo" src="/images/eu.png" alt="EU" title="EU"></a></li>
                         <li><a href="https://www.tudelft.nl/en/" target="_blank"><img id="tudelft_logo" src="/images/tudelft.png" alt="TUDelft" title="TUDelft"></a></li>
                     </ul>
                 </nav>
@@ -138,5 +62,8 @@
                 <p id="footer_copyright"><small>This project has received funding from the European Union's Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 101066739.</small></p>
             </section>
         </footer>
+
+        <script src="js/general.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
