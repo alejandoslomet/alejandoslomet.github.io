@@ -339,8 +339,10 @@ footer {
     }
     #home_objectives {
         width: 50%;
-        float: right;
-        margin-left: 1rem;
+        float: none;
+        display: block;
+        margin: 1rem auto;
+        padding: 0.5rem;
     }
 
     .participants_data {
