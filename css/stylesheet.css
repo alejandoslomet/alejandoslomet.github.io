@@ -26,6 +26,9 @@ hr {
     margin: 0 10vw;
     border-color: #000000;
 }
+aside {
+    display: none;
+}
 /* unvisited link */
 a:link {
     color: #000000;
