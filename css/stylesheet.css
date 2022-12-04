@@ -230,6 +230,7 @@ article {
     display: block;
     width: 90%;
     margin: 0 auto;
+    border-radius: 1rem;
 }
 .article_caption {
     font-size: 0.75rem;
@@ -246,6 +247,12 @@ article {
 }
 #article_social li a img {
     width: 2rem;
+}
+.article_iframe {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 1rem;
 }
 
 #contact_content{
