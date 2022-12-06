@@ -94,7 +94,7 @@ header {
 /* MAIN STYLES */
 main {
     background-color: #ffffff;
-    margin: 0 10vw;
+    margin: 0 10vw 1rem 10vw;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -110,6 +110,15 @@ h2 {
     font-size: 1.5rem;
     text-transform: capitalize;
     text-align: center;
+}
+#about_header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#about_subheader {
+    margin-top: .25rem;
+    font-size: 1rem;
+    font-style: italic;
 }
 p {
     text-align: justify;
@@ -332,7 +341,7 @@ footer {
 /* MEDIA QUERIES FOR SCREENS WIDER THAN 600 PX */
 @media screen and (min-width: 600px) {
     main {
-        margin: 0 15vw;
+        margin: 0 15vw 1rem 15vw;
     }
     header  {
         padding-bottom: 1rem;
@@ -370,6 +379,9 @@ footer {
         display: block;
         margin: 1rem auto;
         padding: 0.5rem;
+    }
+    #home_context_figure {
+        width: 75%;
     }
 
     .participants_data {
@@ -415,7 +427,7 @@ footer {
 /* MEDIA QUERIES FOR SCREENS WIDER THAN 1200 PX */
 @media screen and (min-width: 1200px) {
     main {
-        margin: 0 20vw;
+        margin: 0 20vw 1rem 20vw;
     }
     #header_logo {
         margin: 1rem auto 1rem 12vw;;
@@ -429,6 +441,10 @@ footer {
     }
     #home_objectives {
         width: 40%;
+    }
+    #home_context_figure {
+        width: 60%;
+        max-width: 1000px;
     }
 
     .participants_data {
