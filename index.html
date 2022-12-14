@@ -17,10 +17,10 @@
             <hr id="hr_header">
             <nav id="header_navigation">
                 <ul>
-                    <li><a href="/index.html"><img src="/images/home.png" alt="Home" class="navigation_icon"><br>Home</a></li>
-                    <li><a href="/participants.html"><img src="/images/participants.png" alt="Participants" class="navigation_icon"><br>Participants</a></li>
-                    <li><a href="/news.html"><img src="/images/communication.png" alt="News" class="navigation_icon"><br>News</a></li>
-                    <li><a href="/contact.html"><img src="/images/contact.png" alt="Contact" class="navigation_icon"><br>Contact</a></li>
+                    <li><a href="/index.html"><img src="/images/home.png" alt="DTADD Home" class="navigation_icon"><br>Home</a></li>
+                    <li><a href="/participants.html"><img src="/images/participants.png" alt="DTADD Participants" class="navigation_icon"><br>Participants</a></li>
+                    <li><a href="/news.html"><img src="/images/communication.png" alt="DTADD News" class="navigation_icon"><br>News</a></li>
+                    <li><a href="/contact.html"><img src="/images/contact.png" alt="DTADD Contact" class="navigation_icon"><br>Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,7 +44,6 @@
             </section>
             <section class="home_section" id="home_context">
                 <div id="home_context_text">
-                    <!-- <h2>Context</h2> -->
                     <p>Bridge infrastructure in Europe has great economic, social and cultural value. Nevertheless, many of the assets 
                         which are part of this network are in poor condition, which has been recently evidenced by the collapse of several bridges. 
                         The available human and economic resources are simply not enough to repair, maintain or replace all bridges 
@@ -66,228 +65,13 @@
                 </div>
                 <figure id="home_context_figure">
                     <picture id="home_context_pic">
-                        <img src="/images/unesco_bridges.jpg" alt="UNESCO bridges">
+                        <img src="/images/unesco_bridges.jpg" alt="European bridges part of the UNESCO World Heritage List">
                     </picture>
                     <figcaption id="home_context_fig_cap">
                         European bridges part of the <a href="https://whc.unesco.org/en/list/" target="_blank" id="home_context_fig_cap_link"><b>UNESCO World Heritage List</b></a>.
                     </figcaption>
                 </figure>
             </section>
-            <!-- <section class="home_section" id="home_problem">
-                <div id="home_problem_text">
-                    <h2>Problematic</h2>
-                    <p>The problem of damage detection in bridge monitoring may seem like a simple classification problem, i.e.
-                        identifying whether there is or there is not any damage in the bridge. Several researchers have applied well-known
-                        machine learning and classification algorithms to try to identify damage in bridges. Chalouhi <i>et al.</i> implemented a
-                        two-stage artificial neural network process for damage detection in railway bridges. Pan <i>et al.</i> implemented
-                        a support vector machine to try to identify damage in cable-stayed bridges. More recently, Tran-Ngoc <i>et al.</i> presented
-                        a modified artificial neural network cuckoo search algorithm that was tested on a steel truss bridge.</p> 
-                    <p>However, the individual and highly
-                        complex nature of bridges may result in different dynamic responses and thus add to the complexity of this task.
-                        According to Mehrotra <i>et al.</i> these classification approaches are rarely successful due to the important imbalance
-                        between normal and anomalous cases, and thus result in too many false negatives. An excessive number of false
-                        negatives may hinder the detection of actual damages or substantial decay, ultimately affecting the performance of a
-                        bridge and, in critical cases, leading to its collapse. Conversely, a large number of false positives would lead to
-                        unnecessary spending of resources. By contrast, an acceptable number of false positives may be even desirable for
-                        damage detection on cultural heritage bridges which could be obtained with the application of a fine-tuned anomaly detection
-                        algorithm. Moreover, anomaly detection algorithms have been specifically developed to deal with complex damage detection
-                        situations and could effectively detect changes in the data collected during a bridge health monitoring process.
-                        Furthermore, anomaly detection algorithms can be applied on unsupervised datasets, which makes them highly efficient even if data is not
-                        tagged.</p>
-                    <p>Because of the large number of existing bridges and the limited availability of human and economic
-                        resources, it is not feasible to continuously inspect and assess the structural condition of every bridge in Europe. In
-                        the current practice, bridge inspections are performed on a code-prescriptive fixed-scheduled periodic basis varying
-                        between two to six years. However, those periodic revisions have proven to be ineffective, as damage could appear
-                        after a periodic inspection and not be detected until the next one, leading to further deterioration of the bridge and
-                        increased cost of its eventual repair or replacement, if not to its collapse as in the Magra bridge case.</p> 
-                    <p>In addition to
-                        the particular condition of a bridge, other factors can be considered in scheduling and performing bridge inspections.
-                        Most approaches consider the current and future usage of the bridge, its role in the transportation network, as well as
-                        other environmental, political and social factors. Unfortunately, proper consideration of the cultural heritage value of a bridge is
-                        consistently lacking in the current bridge management methodologies, i.e., Honfi <i>et al.</i>, as most of the current
-                        methodologies, do not even consider the heritage value of the bridge in their bridge management methodology. Janas
-                        <i>et al.</i> only consider the historical value of the bridge as a subset of three factors implemented to determine bridge
-                        repair priority. It is of paramount importance to integrate cultural heritage values with bridge management methodologies, in
-                        agreement with international principles of conservation, otherwise irreplaceable parts of our built environment may
-                        be lost forever.</p>
-                </div>
-            </section>
-            <section class="home_section" id="home_solution">
-                <div id="home_solution_text">
-                    <h2>Proposed solution</h2>
-                    <p>A way to tackle the issue of insufficient resources at network level, while adequately considering the cultural heritage
-                        value of a bridge, is to implement a reliability-based bridge management approach. A reliability-based bridge management approach depends on the implementation of a constant bridge
-                        monitoring system capable of detecting any significant changes in the structural response of the bridge that may
-                        indicate damage or substantial decay. Constant bridge monitoring could become a short-term reality at a network level
-                        thanks to the implementation of low-cost internet-of-things-driven systems, such as the one developed by
-                        Malik <i>et al.</i> Based on the nature and severity of the detected change, a reliability estimation is performed in order
-                        to assess the possible intervention scenarios. The bridge management stakeholder uses the generated information to
-                        make an informed decision, thus optimizing the resources it has at its disposal. The main advantage of implementing
-                        a reliability-based bridge management approach over code-prescriptive fixed-scheduled periodic inspections is that if the bridge suffers significant damage
-                        at any moment in time, immediate action can be taken. Therefore, repairs are applied before damage progresses and
-                        becomes more expensive to fix or leads to the failure of the bridge. Moreover, by constantly monitoring the condition
-                        of the bridge, scheduled inspections could be postponed if no significant change is detected, thus saving important
-                        resources that can be directly applied to inspecting other damaged bridges. Therefore, a RBBMA leads to improved
-                        bridge performance and CH conservation, an increase in the bridge service life and to an eventual reduction of the
-                        maintenance and operation costs of the bridge network.</p>
-                    <p>This interdisciplinary project will go beyond the state of the art by improving bridge damage detection
-                        with the application of a high-performance anomaly detection algorithm to the post-processing of the data collected from bridge monitoring.
-                        The DTADD is a very ambitious, yet achievable project since for the first time, an automatic algorithm will be
-                        implemented with the cultural heritage value of bridges explicitly in mind. The selected anomaly detection algorithm will be fine-tuned to provide an
-                        acceptable number of false positives in order to ensure the adequate and timely detection of damages in cultural heritage bridges,
-                        thus preventing their irreplaceable loss. Furthermore, a specialized open-source decision-making plug-in with a
-                        reliability-based management approach that explicitly considers the cultural heritage of bridges will be developed. This plug-in
-                        could be directly integrated within any of the currently implemented bridge maintenance systems in Europe,
-                        thus bringing the outcomes of this research directly to the reach of bridge management practitioners and stakeholders.
-                        This plug-in will foster the preventive conservation of existing bridges in Europe leading to an improved cultural heritage
-                        conservation and to more sustainable management and operation of bridge networks.</p>
-                </div>
-            </section>
-            <section class="home_section" id="home_objectives">
-                <div id="home_objectives_text">
-                    <h2>Research and Innovation Objectives (R&IO)</h2>
-                    <p>R&IO1 is to build digital twin models of heritage/conventional bridges to assess and identify the highest
-                        performing anomaly detection algorithm for damage and/or significant decay detection.</p>
-                    <p>R&IO2 is to develop an anomaly detection algorithm-informed open-source decision-making plug-in based on a 
-                        reliability-based bridge management approach, to assess
-                        the need for bridge intervention while explicitly considering the bridge's cultural heritage value.</p>
-                </div>
-            </section>
-            <section class="home_section" id="home_quality">
-                <div id="home_quality_text">
-                    <h2>Quality and pertinence</h2>
-                    <p>The quality and pertinence of the DTADD's R&IO are ensured as it builds upon past (BRIME FP4 1998-
-                        1999, COST 345: FP4 1999-2002, ARCHES FP6 2006-2009) and ongoing (EUROSTRUCT COST Action TU146
-                        2018-202017, HYPERION H2020 2019-202218) European research projects. The R&IO of the DTADD fellowship
-                        are aligned with the Transport action of the European Green Deal as well as with the United Nations Sustainable
-                        Development Goals (SDG), particularly with SDG 9: Industry, Innovation and Infrastructure, and with SDG 11:
-                        Sustainable Cities and Communities. Moreover, this fellowship will allow the ER to establish a solid foundation for
-                        future interdisciplinary research across the fields of structural and bridge engineering, artificial intelligence,
-                        asset management and CH conservation and, thus enhancing his employability and academic profile in accordance
-                        with the objectives described by the Horizon Europe Work Programme 2021-2022.</p>
-                </div>
-            </section>
-            <h1 class="header_text">
-                Methodology
-            </h1>
-            <section class="home_section" id="home_methods">
-                <div id="home_methods_text">
-                    <h2>Proposed actions</h2>
-                    <p>The overall methodology proposed by the DTADD fellowship starts with the
-                        construction of a digital twin model of a bridge. A digital twin is a virtual replica of a real-world bridge (asset, process or system).
-                        To address R&IO1, and following the guidance provided by Dang and Shim, the 3D geometry of the bridge will
-                        be created through a building information modelling approach, whereas that the mechanical twin will be
-                        constructed in a finite element software (this BIM-FE approach has proven to be very effective on the
-                        construction of digital twins of bridges).</p> 
-                    <p>Sensors installed during a bridge health monitoring process can provide data about
-                        the environmental conditions, loads and response of the structure to those loads, either at local-element or global bridge
-                        scale. An important challenge of this project would be the collection of actual damage/decay scenarios (which
-                        may not occur) from a real-life bridge during the duration of the fellowship. Therefore, a series of damage and decay
-                        scenarios will be simulated directly on the digital twin model, which will reproduce the structural response of its physical
-                        counterpart through a series of finite element models. This novel digital approach will allow testing the bridge and generate the
-                        required data under several "normal" and "damaged/decayed" scenarios which may otherwise not occur during the
-                        duration of the fellowship if the data were to be collected from a real bridge in real time. Both supervised and
-                        unsupervised databases will be generated with the data obtained from the digital twin simulations.</p> 
-                    <p>The way in which artificial intelligence will
-                        be used during the fellowship consists on testing three different types of anomaly detection algorithms to analyze the data gathered through
-                        the bridge digital twin simulations, namely: distance-based, density-based and rank-based algorithms. The algorithms
-                        performance in detecting damage, in terms of the dynamic structural response of the bridge and the local response of
-                        some key structural elements, will be assessed based on precision, recall and rank power parameters. Moreover, the
-                        data obtained from the digital twin simulations will be analyzed by the anomaly detection algorithms based on the classification of the bridge, i.e. cultural heritage
-                        bridge vs non-cultural heritage bridge. The anomaly detection algorithm will be finely tuned to accept a certain number of false positives when
-                        determining whether there is any damage in the bridge. If no damage is detected and no inspection was previously
-                        scheduled, then the process ends. If, on the other hand, an inspection is scheduled, the process jumps to the
-                        prioritization/optimization module, where the possibility of re-assigning the previously intended resources for such
-                        inspection elsewhere is evaluated.</p> 
-                    <p>If the algorithm detects damage in the bridge, a reliability-based bridge management approach module is run to
-                        determine its reliability, followed by the prioritization/optimization module where inspection needs and scopes are
-                        defined. After an inspection is performed, and based again on the bridge classification, an intervention strategy will
-                        be proposed, prioritizing maintenance and repair for a cultural heritage bridge or the optimization of resources for a conventional
-                        bridge.</p> 
-                    <p>To address R&IO2, the proposed methodology involves the development of a multi-criteria
-                        prioritization/optimization algorithm that includes a novel cultural heritage constraint. This constraint will assign more weight to
-                        the maintenance/repair intervention in case where the bridge management system is dealing with a cultural heritage bridge. This relatively simple but
-                        crucial modification will decisively influence the generation of what-if scenarios, thus increasing the stakeholder
-                        awareness of the importance of cultural heritage conservation.</p> 
-                    <p>Both the anomaly detection algorithm implementation and the multi-criteria
-                        prioritization/optimization modules will be developed under strict interoperability standards. The ultimate goal is to
-                        achieve an optimal compatibility with the current bridge management systems operated in Europe and maximize the impact of these
-                        fellowship results on the different stakeholders involved in the decision-making process of management and
-                        operation of the existing bridge infrastructure in Europe.</p>
-                </div>
-                <figure id="home_methods_figure">
-                    <picture id="home_methods_pic">
-                        <source media="(min-width: 1200px)"
-                                srcset="/images/methodology.jpg">
-                        <img src="/images/methodology.jpg" alt="DTADD methodology">
-                    </picture>
-                    <figcaption id="home_methods_fig_cap">
-                        Novel bridge management DDADD methodology proposed.
-                    </figcaption>
-                </figure>
-            </section> -->
-            <!-- <h1 class="header_text">
-                Interdisciplinarity, gender issues and open science
-            </h1>
-            <section class="home_section" id="home_interdisciplinarity">
-                <div id="home_interdisciplinarity_text">
-                    <h2>Interdisciplinarity</h2>
-                    <p>The DTADD fellowship follows an interdisciplinary approach, combining knowledge and expertise from
-                        the disciplines of bridge and structural engineering, artificial intelligence, reliability analysis and assets
-                        management, and cultural heritage conservation. Bridge and structural engineering knowledge are of paramount importance in
-                        order to understand the behavior of bridges and their response to applied loads. Finite element models are used
-                        in these fields to represent a real system, simulate its structural behavior and assess its safety level. During this
-                        fellowship a digital twin model with a mechanical finite element component of a bridge prototype will be created and it will serve the
-                        purpose of generating the necessary data to represent scenarios of damage/decay on real life bridge. A paramount
-                        component of the DTADD proposal is the assessment and implementation of anomaly detection algorithms, which were originally developed
-                        and implemented in the discipline of artificial intelligence, for the improvement of damage detection on bridges. Concepts and expertise
-                        on reliability analysis and asset management will guide the development of the multi-criteria
-                        prioritization/optimization algorithm with a novel cultural heritage constraint. This algorithm will explicitly consider the cultural heritage value
-                        of existing bridges. Finally, knowledge in this field of cultural heritage conservation is required to be aware of the importance
-                        that cultural heritage plays in Europe, the accepted conservation philosophies and the main methodologies that could be applied
-                        in order to foster the development and improvement of cultural heritage bridges.</p>
-                </div>
-            </section>
-            <section class="home_section" id="home_gender">
-                <div id="home_gender_text">
-                    <h2>Gender issues</h2>
-                    <p>The proposal evaluates gender and diversity aspects through a set of key questions suggested by the Gendered
-                        Innovations' Engineering Checklist. There are no gender or diversity issues directly related to the proposal
-                        objectives, methodology or simulations, nor to the utilization of the proposal outcomes by different sex and genders.
-                        The project will adhere to OsloMet gender policy as described in the Gender Equality Plan and be adjusted as
-                        appropriate if any gender or diversity aspects are discovered during the project period.</p>
-                </div>
-            </section>
-            <section class="home_section" id="home_open">
-                <div id="home_open_text">
-                    <h2>Open science</h2>
-                    <p>The DTADD fellowship fully complies with the mandatory open science practices, and would apply as
-                        often as possible the recommended practices, established in the Horizon Europe Programme Guide and in Article 17 of the Model
-                        Grant Agreement. The fellowship outputs will be early and openly shared by pre-registering at an early stage of the
-                        project a detailed description of the hypothesis, study design and planned analysis at the OSF website and by sharing
-                        the preprints of all scientific publications generated at the Preprints platform. The immediate open access to the
-                        scientific publications produced will be guaranteed by selecting relevant journals compatible with Horizon Europe open access
-                        policies and by using CC BY right of reuse. Alternatively, if a particular article does not fit into the scope of any relevant
-                        open access journal, it will be published at the Open Research Europe website under an open peer-review scheme.
-                        Moreover, digital access will be granted, and persistent identifiers will be generated, to all software and digital twin
-                        models developed as they will be hosted at Github and databases created will be published and shared at Zenodo.
-                        Finally, the final fellowship report will contain complementary information about the research outputs/tools
-                        needed to validate the conclusions of scientific publications created during the fellowship.</p>
-                    <p>Relevant knowledge actors and end-users will be involved in the research project at an early
-                        stage during a co-design workshop to discuss the benefits and the challenges of the R&IO of the fellowship, at an
-                        intermediate stage during a second co-creation workshop to participate in the developing of an adequate and effective
-                        implementation of the proposed tools and finally, at the end of the project during a co-assessment activities workshop
-                        in order to test the implemented tool and provide feedback with regards to further improvement steps of the DTADD
-                        developed tools.</p>
-                    <p>All data and research outputs generated through the DTADD fellowship will be properly managed by a
-                        data management plan, as part of the project management plan, and will comply with the FAIR
-                        principles. A data management plan will be created at the beginning of the fellowship and published at the DMPOnline platform.
-                        The data management plan will be revised biannually and adjusted as required during the duration of the fellowship. The findability,
-                        accessibility, interoperability and reusability of the DTADD fellowship generated data will be ensured by applying
-                        and complying with the FAIR principles published by Wilkinson <i>et al.</i> and by following the specification and
-                        guidelines published by the Research Data Alliance.</p>
-                </div>
-            </section> -->
         </main>
 
         <aside>
@@ -300,29 +84,29 @@
             <section id="footer_container1">
                 <nav id="footer_soc_media">
                     <ul>
-                        <li><a href="https://www.facebook.com/MSCA.DTADD" target="_blank"><img id="facebook_logo" src="/images/facebook.png" alt="Facebook" title="Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/msca_dtadd/?fbclid=IwAR3UEEqUl3cHrVvYcUaG1npCGDzgzBT3U5JJ2D33t9O12la9Yw7Li84Ii1M" target="_blank"><img id="instagram_logo" src="/images/instagram.png" alt="Instagram" title="Instagram"></a></li>
-                        <li><a href="https://twitter.com/MSCA_DTADD" target="_blank"><img id="twitter_logo" src="/images/twitter.png" alt="Twitter" title="Twitter"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCCFfT_ggKhtvxVhwdXyYqEw" target="_blank"><img id="youtube_logo" src="/images/youtube.png" alt="Youtube" title="Youtube"></a></li>
-                        <li><a href="https://www.linkedin.com/company/msca-dtadd/" target="_blank"><img id="linkedin_logo" src="/images/linkedin.png" alt="Linkedin" title="Linkedin"></a></li>
-                        <li><a href="https://www.researchgate.net/project/Digital-Twin-Anomaly-Detection-Decision-Making-DTADD-for-Bridge-Management" target="_blank"><img id="researchgate_logo" src="/images/researchgate.png" alt="Researchgate" title="Researchgate"></a></li>
-                        <li><a href="https://osf.io/wfqrg/" target="_blank"><img id="osf_logo" src="/images/osf.png" alt="OSF" title="OSF"></a></li>
+                        <li><a href="https://www.facebook.com/MSCA.DTADD" target="_blank"><img id="facebook_logo" src="/images/facebook.png" alt="DTADD Facebook" title="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/msca_dtadd/?fbclid=IwAR3UEEqUl3cHrVvYcUaG1npCGDzgzBT3U5JJ2D33t9O12la9Yw7Li84Ii1M" target="_blank"><img id="instagram_logo" src="/images/instagram.png" alt="DTADD Instagram" title="Instagram"></a></li>
+                        <li><a href="https://twitter.com/MSCA_DTADD" target="_blank"><img id="twitter_logo" src="/images/twitter.png" alt="DTADD Twitter" title="Twitter"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCFfT_ggKhtvxVhwdXyYqEw" target="_blank"><img id="youtube_logo" src="/images/youtube.png" alt="DTADD Youtube" title="Youtube"></a></li>
+                        <li><a href="https://www.linkedin.com/company/msca-dtadd/" target="_blank"><img id="linkedin_logo" src="/images/linkedin.png" alt="DTADD Linkedin" title="Linkedin"></a></li>
+                        <li><a href="https://www.researchgate.net/project/Digital-Twin-Anomaly-Detection-Decision-Making-DTADD-for-Bridge-Management" target="_blank"><img id="researchgate_logo" src="/images/researchgate.png" alt="DTADD Researchgate" title="Researchgate"></a></li>
+                        <li><a href="https://osf.io/wfqrg/" target="_blank"><img id="osf_logo" src="/images/osf.png" alt="DTADD OSF" title="OSF"></a></li>
                     </ul>
                 </nav>
             </section>
             <section id="footer_container2">
                 <nav id="footer_institutions">
                     <ul>
-                        <li><a href="https://www.oslomet.no/en/" target="_blank"><img id="oslomet_logo" src="/images/oslomet.png" alt="Oslomet" title="Oslomet"></a></li>
-                        <li><a href="https://cordis.europa.eu/project/id/101066739" target="_blank"><img id="eu_logo" src="/images/eu.png" alt="EU" title="EU"></a></li>
-                        <li><a href="https://www.tudelft.nl/en/" target="_blank"><img id="tudelft_logo" src="/images/tudelft.png" alt="TUDelft" title="TUDelft"></a></li>
+                        <li><a href="https://www.oslomet.no/en/" target="_blank"><img id="oslomet_logo" src="/images/oslomet.png" alt="DTADD Oslomet" title="Oslomet"></a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/101066739" target="_blank"><img id="eu_logo" src="/images/eu.png" alt="DTADD EU" title="EU"></a></li>
+                        <li><a href="https://www.tudelft.nl/en/" target="_blank"><img id="tudelft_logo" src="/images/tudelft.png" alt="DTADD TUDelft" title="TUDelft"></a></li>
                     </ul>
                 </nav>
             </section>
             <hr>
             <section>
                 <address id="footer_address">
-                    Created by <a href="https://orcid.org/0000-0003-4470-255X" target="_blank">Dr. Alejandro Jimenez Rios</a><br>
+                    Created by <a href="https://orcid.org/0000-0003-4470-255X" target="_blank">Dr. Alejandro Jiménez Rios</a><br>
                 </address>
             </section>
             <section>
