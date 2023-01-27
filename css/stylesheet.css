@@ -56,6 +56,12 @@ a:active {
     color: #ffd500;
     text-decoration: none;
 }
+#si_banner {
+    width: 65vw;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 /* HEADER STYLES */
@@ -424,6 +430,9 @@ footer {
     footer {
         clear: both;
     }
+    #si_banner {
+        width: 60vw;
+    }
 }
 
 
@@ -515,6 +524,9 @@ footer {
         margin-right: 1rem;
         padding-right: 0;
         height: 27vw;
+    }
+    #si_banner {
+        width: 40vw;
     }
 
 }
