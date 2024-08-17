@@ -394,7 +394,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0;
+    padding-left: 100px;
+    padding-right: 100px;
     margin: 0;
 }
 #footer_soc_media ul li img{
@@ -402,7 +403,7 @@ footer {
 }
 #footer_institutions ul li img{
     width: 20vw;
-    max-width: 200px;
+    max-width: 250px;
 }
 #footer_address {
     text-align: center;
@@ -611,13 +612,13 @@ footer {
         margin: 0;
     }
     #google_maps {
-        width: 45%;
+        width: 40%;
         float: left;
         clear: right;
         margin: 0 1rem;
     }
     #p35 {
-        width: 31%;
+        width: 40%;
         float: left;
         margin: 1rem 4rem;
     }
@@ -625,7 +626,7 @@ footer {
         float: right;
         margin-right: 1rem;
         padding-right: 0;
-        height: 27vw;
+        height: 24vw;
     }
     #si_banner {
         width: 40vw;
